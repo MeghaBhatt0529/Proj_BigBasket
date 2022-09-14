@@ -1,0 +1,72 @@
+body {
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+header{
+    height: auto;
+    width: 100%;
+    /*border: solid red;*/
+    background-color:white;
+    box-shadow: 5px 5px 5px #f0f0f0;
+}
+#containerNav{
+    height: auto;
+    width: 84%;
+    /*border: solid green;*/
+ margin-left: 8%;
+ background-color: white;
+ 
+}
+
+
+.search{
+    width: 55%;
+    height: 6%;
+    margin-left: 2%;
+   
+}
+.container {
+    margin-top:30px;
+    width: 100%;
+    height: auto;
+   /* border: solid rgb(206, 200, 200);*/
+    box-shadow: 5px 5px 5px #f0f0f0;
+    border-radius: 20px 10px 10px 20px
+}
+
+.containerBig{
+    width: 84%;
+    height: 320px;
+    /*border: solid blueviolet;*/
+    margin-left: 8%;
+    margin-top: 30px;
+
+}
+.ContainerTile1{
+    width: 50%;
+    height: 320px;
+   /* border: solid yellow;*/
+    box-shadow: 5px 5px 5px #f0f0f0;
+    float: left;
+    border-radius: 20px 10px 10px 20px
+}
+.ContainerTile2{
+    width: 50%;
+    height: 320px;
+   /* border: solid yellow;*/
+    float: right;
+    border-radius: 20px 10px 10px 20px
+}
+.ContainerTile3{
+    width: 49%;
+    height: 148px;
+    /*border: solid teal;*/
+    box-shadow: 5px 5px 5px #f0f0f0;
+    float: right;
+    margin-bottom: 3px;
+    border-radius: 20px 10px 10px 20px
+}
