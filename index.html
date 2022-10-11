@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -9,13 +10,15 @@
 </head>
 <title>Online Grocery Shopping and Online Supermarket in India - bigbasket</title>
 <link href="BB ICON.jpg" rel="icon">
-<link href="first.css" rel="stylesheet" type="text/css" />
-</link>
+<link href="first.css" rel="stylesheet" type="text/css" /></link>
+<script src="bb.js"></script>
 
 <body>
     <header>
-        <!--NavBar-->
+       
+        <!--NavBar1-->
         <div id="containerHeader">
+            
             <div id="containerNav">
                 <img src="https://i.ibb.co/Q6Z1y54/bb-logo.png" alt="bb-logo" alt="" width="100px" height="90px">
                 </a>
@@ -25,6 +28,18 @@
                 <button type="button" class="btn btn-dark btn me-2">Login/ Sign Up</button>
                 <button type="button" class="btn btn-danger"><i class="bi bi-basket"></i></button>
             </div>
+
+             <!--Coupon-->
+         <div id="couponContainer">
+            <div id="coupon">
+                <button onClick="closeCoupon()">&times;</button>
+                <div><img src="coupon.jpg" alt="coupon" width="600px" height="450px">
+                </div>
+            <script>
+                window.onload = loadCoupon()
+            </script></div></div>
+
+            <!--NavBar2-->
             <div id="containerNav">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="dropdown">
@@ -127,9 +142,8 @@
         </div>
         <!--My Smart Basket-->
         <div class="container">
-
             <div id="containerSmartbasket">
-                <h3>My Smart Basket</h3>
+                <h4>My Smart Basket</h4>
                 <div class="row row-cols-1 row-cols-md-4 g-4">
 
                     <div class="col">
@@ -181,6 +195,7 @@
         </div>
         <!--Bank Offers-->
         <div class="container">
+            <h4>Bank Offers</h4>
             <div class="row">
                 <div class="col"><img src="https://i.ibb.co/HNSsmTP/t1-hp-aff-m-paytm-360-060922.jpg"
                         alt="t1-hp-aff-m-paytm-360-060922" width="100%"></div>
@@ -346,9 +361,10 @@
         <!--Fruits & Vegetable-->
 
         <div class="containerBig">
+            <h3>Fruits & Vegetable</h3>
             <div class="ContainerTile1"><img
                     src="https://i.ibb.co/gS7trDD/hp-orhanice-fnv-fnv-Storefront-m-250822-560x378-01.webp"
-                    alt="hp-orhanice-fnv-fnv-Storefront-m-250822-560x378-01" width="95%" height="290px"></div>
+                    alt="hp-orhanice-fnv-fnv-Storefront-m-250822-560x378-01 " width="95%" height="290px"></div>
             <div class="ContainerTile2">
                 <div class="ContainerTile3"><img
                         src="https://i.ibb.co/kJzHptc/hp-fresh-fruits-fnv-Storefront-m-250822-275x184-02.webp"
@@ -394,6 +410,7 @@
         <!--Beverages-->
 
         <div class="containerBig">
+            <h4>Beverages</h4>
             <div class="ContainerTile1"><img
                     src="https://i.ibb.co/zJ5DkcV/hp-soft-drinks-beverages-Storefront-m-250822-560x378-01.jpg"
                     alt="hp-soft-drinks-beverages-Storefront-m-250822-560x378-01" width="95%" height="290px"></div>
@@ -459,6 +476,7 @@
 
         <!--Beauty & Hygeiene-->
         <div class="containerBig">
+            <h4>Beauty & Hygeiene</h4>
             <div class="ContainerTile1"><img src="https://i.ibb.co/31fD6MB/t1-hp-b-h-c-makeup-378-250822.jpg"
                     alt="t1-hp-b-h-c-makeup-378-250822" width="95%" height="290px"></div>
             <div class="ContainerTile2">
@@ -530,8 +548,46 @@
                 </button>
             </div>
         </div>
-    </body>
-    <footer>
-    </footer>
+   
+    <footer class=" Container bg-dark text-white pt-4 pb-4">
 
-</html>
+        <div class="text-center text-md-left">
+
+            <div class="row text-center text-md-left">
+                <div class="col-md-3 mx-auto mt-3">
+
+                    <h6>Bigbasket</h6>
+                    <p>About Us</p>
+                    <p>In News</p>
+                </div>
+
+                <div class="col-md-3 mx-auto mt-3">
+                    <h6>Help</h6>
+                    <p>FAQs</p>
+                    <p>Contact Us</p>
+                </div>
+                <div class="col-md-4 col-lg-4 mt-5">
+                    <div class=" text-center text-md-right">                            
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px;"><i
+                                        class="bi bi-facebook"></i></a>                      
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px;"><i
+                                        class="bi bi-twitter"></i></a>
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px;"><i
+                                        class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <hr />
+        Cities We Serve
+        <hr />
+        Popular Brands
+        <hr />
+        Copyright © 2021-2023 Supermarket Grocery Supplies Pvt Ltd
+    </footer>
+</body>
+<html>
+    
+
+
