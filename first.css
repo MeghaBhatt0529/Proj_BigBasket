@@ -5,7 +5,6 @@ body {
 a {
     text-decoration: none;
 }
-
 header {
     height: auto;
     width: 100%;
@@ -13,7 +12,6 @@ header {
     background-color: white;
     box-shadow: 5px 5px 5px #f0f0f0;
 }
-
 #containerNav {
     height: auto;
     width: 84%;
@@ -22,15 +20,12 @@ header {
     background-color: white;
 
 }
-
-
 .search {
     width: 55%;
     height: 6%;
     margin-left: 2%;
 
 }
-
 .container {
     margin-top: 30px;
     width: 100%;
@@ -39,7 +34,6 @@ header {
     box-shadow: 5px 5px 5px #f0f0f0;
     border-radius: 20px 10px 10px 20px
 }
-
 .containerBig {
     width: 84%;
     height: 320px;
@@ -48,7 +42,6 @@ header {
     margin-top: 30px;
 
 }
-
 .ContainerTile1 {
     width: 50%;
     height: 320px;
@@ -57,7 +50,6 @@ header {
     float: left;
     border-radius: 20px 10px 10px 20px
 }
-
 .ContainerTile2 {
     width: 50%;
     height: 320px;
@@ -65,7 +57,6 @@ header {
     float: right;
     border-radius: 20px 10px 10px 20px
 }
-
 .ContainerTile3 {
     width: 49%;
     height: 148px;
@@ -75,7 +66,6 @@ header {
     margin-bottom: 3px;
     border-radius: 20px 10px 10px 20px
 }
-
 #coupon {
     z-index: 100;
     margin-left: 26%;
@@ -86,9 +76,6 @@ header {
     background-color: #ffffff;
     border: dashed #a8cf45;
 }
-
-
-
 footer {
     text-align: center;
 }
