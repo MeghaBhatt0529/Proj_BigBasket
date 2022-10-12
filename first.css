@@ -80,11 +80,11 @@ header {
     z-index: 100;
     margin-left: 26%;
     position: fixed;
-    visibility: collapse;
     opacity: 95%;
     box-shadow: 10px 10px 20px #a8cf45;
-    margin-top: 5%;
-    background-color: #a8cf45;
+    margin-top: 6%;
+    background-color: #ffffff;
+    border: dashed #a8cf45;
 }
 
 
