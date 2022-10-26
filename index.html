@@ -80,25 +80,65 @@
                             <li><a class="dropdown-item" href="#">Cup Noodles</a></li>
                             <li><a class="dropdown-item" href="#">Hair Care</a></li>
                         </ul>
-                    </div>                   
-                    <div class="vr me-4"></div>
+                    </div>
+                    <div class="vr me-3"></div>
                     <img src="https://i.ibb.co/R0dWcrb/hp-cmc-m-offer-28-220921-all.png "
                         alt="hp-cmc-m-offer-28-220921-all">
 
                     <img src="https://i.ibb.co/R0dWcrb/hp-cmc-m-offer-28-220921-all.png"
                         alt="hp-cmc-m-offer-28-220921-all">
 
-                        <div class="vr me-4 ms-4"> </div>
+                    <div class="vr me-3 ms-3"> </div>
 
-                        <div>
-                            <!--Light/Dark-->
-                           <button class="btn btn-light" onClick="changeMode()"><img src="DayNight.png" alt="darkmode" height="30px" width="40px" margin right="5px"></button>
-                       </div>
+                    <div>
+                        <!--Light/Dark-->
+                        <button class="btn btn-light me-3" onClick="changeMode()"><img src="DayNight.png" alt="darkmode"
+                                height="30px" width="40px"></button>
+                    </div>
 
-                      
+                    <!--Geo location and weather-->
+                    <button class="btn btn-light me-3" onClick="geolocation()"><img
+                            src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdqWrJ28n35OK-SA53G4eUfOoRb2WWeWUEEw&usqp=CAU'
+                            alt="weather" height="30px" width="40px" /></button>
+                    <p id="out"></p>
+                    <p id="weatherOut"></p>
+                    <script>x = document.getElementById('out');
+                        let y = document.getElementById('weatherOut');
+
+                        function geolocation() {
+                            if (navigator.geolocation) {
+                                navigator.geolocation.getCurrentPosition(showPosition)
+                            } else {
+                                x.innerText = "Geo Not Supported"
+                            }
+                        }
+
+                        function showPosition(data) {
+                            console.log(data)
+                            let lat = data.coords.latitude;
+                            let long = data.coords.longitude;
+                            x.innerText = `Latitude is ${lat} and longitude is ${long}`
+                            const url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${long}&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`
+                            //api calling
+                            fetch(url, { method: 'GET' })
+                                // return promise
+                                .then((res) => res.json())
+                                // resolve promise
+                                .then((data) => {
+                                    console.log(data)
+                                    let cityName = data.city.name;
+                                    let temp = data.list[0].temp.day;
+                                    y.innerText = `Your city is ${cityName} & temp is ${temp} °C`
+                                })
+                                .catch((err) => {
+                                    console.log(err)
+                                })
+
+                        }
+                    </script>
                 </nav>
-            
-           
+
+
     </header>
     <!--carousel-->
     <div class="container">
@@ -554,7 +594,7 @@
             </button>
         </div>
     </div>
-   
+
 
     <footer class=" Container bg-dark text-white pt-4 pb-4">
 
